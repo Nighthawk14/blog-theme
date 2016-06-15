@@ -593,7 +593,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav {
     position: relative;
-    padding: 35px 40px;
+    padding: 10px 40px;
     margin: 0 0 30px 0;
 }
 
@@ -865,17 +865,29 @@ body.nav-opened .nav {
     float: right;
     height: 38px;
     padding: 0 15px;
-    border-style: solid;
-    border-width: 1px;
     opacity: 1;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
     line-height: 35px;
     white-space: nowrap;
-    border-radius: 3px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
+
+.menu-button:hover {
+  color: #E95A2D;
+}
+
+.menu-button_blog {
+  background-color: #E95A2D;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.menu-button_blog:hover {
+  color: #FFFFFF;
+}
+
 .menu-button:before {
     font-size: 12px;
     font-weight: bold;
@@ -883,30 +895,8 @@ body.nav-opened .nav {
     position: relative;
     top: 1px;
 }
-.menu-button:hover {
-    background: #fff;
-}
 .menu-button:focus {
     outline: 0;
-}
-
-/* When the navigation is closed */
-.nav-closed .menu-button {
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.6);
-}
-.nav-closed .menu-button:hover {
-    color: #222;
-}
-
-/* When the navigation is closed and there is no cover image */
-.nav-closed .no-cover .menu-button {
-    border-color: #BFC8CD;
-    color: #9EABB3;
-}
-.nav-closed .no-cover .menu-button:hover {
-    border-color: #555;
-    color: #555;
 }
 
 /* When the navigation is opened */
